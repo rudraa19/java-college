@@ -1,21 +1,21 @@
 import java.util.Arrays;
 
-class Array {
+public class Array {
     int[] data;
 
-    public Array() {
+    Array() {
         data = new int[0];
     }
 
-    public Array(int size) {
+    Array(int size) {
         data = new int[size];
     }
 
-    public Array(int[] data) {
+    Array(int[] data) {
         this.data = data;
     }
 
-    public void Reverse_an_array() {
+    void Reverse_an_array() {
         int left = 0, right = data.length - 1;
         while (left < right) {
             int temp = data[left];
@@ -26,7 +26,7 @@ class Array {
         }
     }
 
-    public int Maximum_of_array() {
+    int Maximum_of_array() {
         int max = data[0];
         for (int i = 1; i < data.length; i++) {
             if (data[i] > max) {
@@ -36,7 +36,7 @@ class Array {
         return max;
     }
 
-    public double Average_of_array() {
+    double Average_of_array() {
         int sum = 0;
         for (int num : data) {
             sum += num;
@@ -44,18 +44,18 @@ class Array {
         return data.length > 0 ? (double) sum / data.length : 0;
     }
 
-    public void Sorting() {
+    void Sorting() {
         Arrays.sort(data);
     }
 
-    public void display() {
+    void display() {
         for (int num : data) {
             System.out.print(num + " ");
         }
         System.out.println();
     }
 
-    public int search(int no) {
+    int search(int no) {
         for (int i = 0; i < data.length; i++) {
             if (data[i] == no) {
                 return i;
@@ -64,7 +64,7 @@ class Array {
         return -1;
     }
 
-    public int size() {
+    int size() {
         return data.length;
     }
 
