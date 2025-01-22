@@ -5,6 +5,7 @@ public class Student {
   String name;
   static String college="ADIT";
 
+  // static void change(){college="CVMU";}
   Student(int r, String n){
     rollno = r;
     name = n;
@@ -16,7 +17,7 @@ public class Student {
   public static void main(String[] args) {
     Student s1 = new Student(111, "Rudra");
     Student s2 = new Student(112, "Vaibhav");
-
+    // Student.change();
     Student.college = "CVMU";
 
     s1.display();
